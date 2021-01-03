@@ -2,6 +2,9 @@
   "name": "react-form-context",
   "version": "1.0.0",
   "description": "simple form wrapper wrappes most of form functionality.",
+  "dependencies": {
+    "react": "^17.0.1"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
