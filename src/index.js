@@ -8,21 +8,20 @@ export const setFormValue = () => useContext(DispatchContext);
 
 const initialState = {};
 const rootReducer = (state, action) =>
-  //   console.log(state, action)
-  ({
+({
     ...state,
     [action.type]: action.value,
-  });
+});
 
 function Form({ children }) {
-  const [state, dispatch] = useReducer(rootReducer, initialState);
-  return (
-    <DispatchContext.Provider value={dispatch}>
-      <FormContext.Provider value={state}>
-        {children}
-      </FormContext.Provider>
-    </DispatchContext.Provider>
-  );
+    const [state, dispatch] = useReducer(rootReducer, initialState);
+    return (
+        <DispatchContext.Provider value={dispatch}>
+            <FormContext.Provider value={state}>
+                {children}
+            </FormContext.Provider>
+        </DispatchContext.Provider>
+    );
 }
 
 export default Form;
