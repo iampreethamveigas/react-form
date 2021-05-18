@@ -1,5 +1,5 @@
 {
-  "name": "react-form-context",
+  "name": "form-react-contextapi",
   "version": "1.0.0",
   "description": "simple form wrapper wrappes most of form functionality.",
   "dependencies": {
